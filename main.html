@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-<form autocomplete="off">
+<form method ="post">
 	<div>
 	<label for="name">Name</label>
 	<input type="text" name="name"  id="name" placeholder="enter your name" required>
@@ -26,12 +26,20 @@
     Female: <input type="radio" name="gender" required>
     </div><br>
 	<div>
-            <label for="gender">Laptop Brands:</label><br>
-           Apple<input type="checkbox"  name="gender">
-           Asus<input type="checkbox" name="gender">
-           HP<input type="checkbox" name="gender">
-
-        </div><br>
+            <label for="brands">Laptop Brands:</label>
+          <select id="brands" name=brands>
+			  <option
+			  value="mobile">option</option>
+			 
+          <option
+			  value="apple">Apple</option>
+			  <option
+				  value="asus">Asus</option>
+			  <option
+				  value="hp">HP</option>
+		  </select>
+			  
+	</div><br>
 	<div>
 	<label for="age">Age</label>
 	<input type="age" name="age" id="age" required>
